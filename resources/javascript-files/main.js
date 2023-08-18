@@ -153,3 +153,67 @@ sections.forEach(section => {
         toptext3.innerHTML = ct;
     });
 
+
+
+
+
+
+
+
+
+
+
+
+
+    function adjustElements() {
+        const windowWidth = window.innerWidth;
+        const windowHeight = window.innerHeight;
+        
+        // Örnek element seçicilerine göre boyutları ve stilleri ayarla
+        const glassTextarea = document.querySelector('.glass-textarea');
+        const footerLabelTop = document.querySelector('#footer-label-top');
+        const footerLabelBottom = document.querySelector('#footer-label-bottom');
+        const sabit1 = document.querySelector('.sabit-gezinme');
+        const rightsidecontainer1 = document.querySelector('#right-side-container1');
+    
+        if (windowWidth <= 768) {
+          // Mobil boyutlar
+          glassTextarea.style.width = '100%';
+          glassTextarea.style.maxWidth = '300px';
+          glassTextarea.style.height = '70px';
+          glassTextarea.style.top = '40%';
+          glassTextarea.style.left = '10%';
+          
+          footerLabelTop.style.top = '20%';
+          footerLabelTop.style.left = '2%';
+          footerLabelTop.style.fontSize = '32px';
+          
+          footerLabelBottom.style.top = '50%';
+          footerLabelBottom.style.left = '2%';
+          footerLabelBottom.style.fontSize = '16px';
+          footerLabelBottom.style.lineHeight = '24px';
+        
+          rightsidecontainer1.style.width = '250px';
+          rightsidecontainer1.style.left= '200px';
+
+        } else {
+          // Geniş ekran boyutları için orijinal stil
+          glassTextarea.style.width = '257px';
+          glassTextarea.style.height = '70px';
+          glassTextarea.style.top = '50%';
+          glassTextarea.style.left = '60%';
+          
+          footerLabelTop.style.top = '35%';
+          footerLabelTop.style.left = '250px';
+          footerLabelTop.style.fontSize = '48px';
+          
+          footerLabelBottom.style.top = '50%';
+          footerLabelBottom.style.left = '250px';
+          footerLabelBottom.style.fontSize = '20px';
+          footerLabelBottom.style.lineHeight = '30px';
+        }
+      }
+    
+      // İlk yükleme ve ekran boyutu değişikliklerinde ayarları güncelle
+      adjustElements();
+      window.addEventListener('resize', adjustElements);
