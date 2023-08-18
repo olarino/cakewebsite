@@ -193,8 +193,8 @@ sections.forEach(section => {
           footerLabelBottom.style.fontSize = '16px';
           footerLabelBottom.style.lineHeight = '24px';
         
-          rightsidecontainer1.style.width = '250px';
-          rightsidecontainer1.style.left= '200px';
+          rightsidecontainer1.style.width = '150px';
+          rightsidecontainer1.style.left= '400px';
 
         } else {
           // Geniş ekran boyutları için orijinal stil
