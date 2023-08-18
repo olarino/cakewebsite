@@ -28,6 +28,12 @@ width: 100%;
   -webkit-scroll-behavior: smooth;
 }
 
+@media (max-width: 768px) {
+  main > section > div {
+    font-size: 48px;
+  }
+}
+
 main > section > div {
   font-size: 80px;
   font-weight: 700;
@@ -148,24 +154,23 @@ textarea::placeholder {
 
 
 #right-side-container1 {
-  position: absolute;
+  position: fixed;
   top: 200px;
   right: 200px;
-  width: 25%;
+  width: 490px;
   height: 450px;
   padding: 20px;
   color: rgba(0, 0, 0,10);
   border-radius: 20px;
-  font-size: 20px;
+  font-size: 1em; /* Yazı boyutunu 1em olarak ayarlayın */
   overflow-y: auto; 
-  line-height: 25px;
+  line-height: 1.25em; /* Satır yüksekliğini 1.25em olarak ayarlayın */
   font-family: 'Nunito', sans-serif;
   background-color: white;
   color: rgb(0, 0, 0);
   box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   overflow: hidden;
 }
-
 
 
 
@@ -255,11 +260,7 @@ textarea::placeholder {
   width: 60%;
 }
 
-#test {
-  position: absolute;
-  top: 60%;
-  z-index: 10;
-}
+
 
 #section-1 {
   position: relative;
@@ -365,6 +366,29 @@ cursor: pointer;
   line-height: 30px;
 }
 
+@media (max-width: 768px) {
+  .glass-textarea {
+    top: 40%;
+    right: 15px;
+    width: 100%;
+    max-width: 300px;
+    height: 50px;
+    border-radius: 30px;
+  }
+  
+  #footer-label-top {
+    top: 20%;
+    left: 50px;
+    font-size: 32px;
+  }
+
+  #footer-label-bottom {
+    top: 30%;
+    left: 50px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
 
 
 
@@ -399,7 +423,7 @@ cursor: pointer;
 
 
 .sabit-gezinme {
-    position: fixed;
+    position:absolute;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -436,15 +460,3 @@ cursor: pointer;
     font-weight: 900;
     color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
