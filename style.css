@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap');
+#site-top-logo {
+    width: 150px;
+    
+}
+
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(to bottom, white 33%, pink 66%, white 100%)
+}
+
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px; /* İstenilen üst boşluk */
+}
+
+
+
+
+
+
+
+
+.nav-buttons-default {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 12px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center; /* Metni yatayda ortala */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 60px; /* Metni dikeyde ortala (eşit yükseklik) */
+    transition: color 0.3s;
+    letter-spacing: 2px;
+}
+.nav-buttons-default i {
+    font-size: 8px; /* İstenilen boyut (örnekte 8px) */
+    vertical-align:1.4px;
+}
+
+
+
+
+
+
+/* Dropdown içeriği için stil düzenlemeleri */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Beyaz arkaplan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde arka plan rengi değiştir */
+}
+
+/* Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown butonuna gelindiğinde dropdown içeriğini göster */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.portfolio-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.4); /* Arka plan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Portfolio içindeki Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.portfolio-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio içindeki Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.portfolio-dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde metin rengi değiştir */
+}
+
+/* Portfolio içindeki Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.portfolio-dropdown {
+    position: relative;
+}
+
+/* Portfolio içindeki Dropdown butonuna gelindiğinde Dropdown içeriğini göster */
+.portfolio-dropdown:hover .portfolio-dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+/* Contact içindeki Dropdown içeriği için stil düzenlemeleri */
+.contact-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Arka plan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Contact içindeki Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.contact-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact içindeki Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.contact-dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde metin rengi değiştir */
+}
+
+/* Contact içindeki Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.contact-dropdown {
+    position: relative;
+}
+
+/* Contact içindeki Dropdown butonuna gelindiğinde Dropdown içeriğini göster */
+.contact-dropdown:hover .contact-dropdown-content {
+    display: block;
+}
+
+
+::selection {
+    background-color: rgb(202, 155, 229);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+#nav-order-now-button:hover {
+    cursor:pointer;
+}
+#nav-portfolio-order:hover {
+    cursor:pointer;
+}
+#nav-contact-order:hover {
+    cursor:pointer;
+}
+#site-top-logo {
+    width: 200px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.nav-buttons-default:hover {
+    color: rgb(237,200,177); /* Yumuşak geçişle değişecek renk */
+}
+#nav-home-button {
+    color: rgb(237,200,177);
+}
+
+
+#background-overlay {
+margin: 20px;
+}
+
+
+#body-text-area-top {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color:rgb(78, 78, 78);
+    line-height: 2;
+    margin: 30px;
+}
+
+#body-text-area-bottom {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 1.5; /* Yeni satırlar arasındaki mesafeyi kontrol eder */
+    text-align: center;
+    color: rgb(85, 85, 85);
+    margin: 30px;
+    font-weight: 300; /* Yazıyı daha ince hale getirir */
+    padding-bottom: 150px;
+}
+
+.gallery {
+    display: flex;
+    text-align: center;
+  }
+  
+  /* Her bir galeri öğesini düzenleyelim */
+  .gallery-item {
+    display: none;
+    margin: 20px; /* İstenilen boşluk */
+  }
+  
+  /* Açıklama metni için stil düzenlemeleri */
+  .gallery-item p {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: rgb(183, 184, 184);
+  }
+  
+
+#photo1-top-text {
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 50;
+    color:  rgb(122, 122, 122);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#photo1-mid-text {
+    text-align: center;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 50;
+    color:  rgb(122, 122, 122);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#photo1-bottom-text {
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    line-height: 1.5;
+    color:  rgb(85, 85, 85);
+}
+
+
+
+
+
+
+
+
+
+
+.gallery-item1-button {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .gallery-item1-button:hover {
+    background-color: rgb(241, 231, 232);
+    border-color: white;
+    color: white;
+    cursor:pointer;
+  }
+
+  .gallery-item2-button {
+    width: 150px;
+    height: 40px;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .gallery-item2-button:hover {
+    background-color: rgb(241, 231, 232);
+    border-color: white;
+    color: white;
+    cursor:pointer;
+  }
+
+  
+  .gallery-item img {
+    transition: transform 0.3s ease-in-out; /* Geçiş süresi ve animasyon türü */
+  }
+  
+  .gallery-item img:hover {
+    transform: scale(1.1); /* Üzerine gelindiğinde resmin boyutunu biraz büyütebilirsiniz */
+  }
+
+  #down-top-text {
+    margin: 170px;
+    margin-bottom: 30px;
+    color: rgb(122, 122, 122);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+  }
+
+  .photo-container {
+    display: flex;
+  }
+  
+  .photo-container img {
+    margin-right: 20px;
+  }
+
+
+  .gallery-item3-button {
+    margin: 30px;
+    width: 350px;
+    height: 50px;
+    background-color: white;
+    border: 1px solid black;
+    transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+  }
+
+  .gallery-item3-button:hover {
+    background-color: rgb(241, 231, 232);
+    color: white;
+    border-color: white;
+    cursor:pointer;
+  }
+
+  #bottom-top-text {
+    margin: 50px;
+    margin-bottom: 30px;
+    color: rgb(122, 122, 122);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+  }
+
+
+  .instagram-container {
+    position: relative;
+    width: 200px; /* İstediğiniz genişlik değeri */
+    height: 200px; /* İstediğiniz yükseklik değeri */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin: 150px;
+}
+
+
+.instagram-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(47, 159, 255); /* Başlangıçta mavi arkaplan rengi ve saydamlık */
+    padding: 20px;
+    border-radius: 2%; /* Kareyi daire şeklinde yapmak için */
+    text-align: center;
+    color: white;
+    width: 250px; /* İstediğiniz kare boyutu */
+    height: 50px; /* İstediğiniz kare boyutu */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s; /* Arka plan rengi geçişi için animasyon */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.instagram-overlay:hover {
+    background-color: rgba(20, 26, 31, 0.7); /* Üzerine gelindiğinde yeni mavi rengi */
+    cursor: pointer;
+}
+
+.instagram-overlay i {
+    font-size: 36px; /* İkon boyutu */
+    margin-bottom: 10px;
+    cursor: pointer;
+    
+}
+
+.instagram-overlay span {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+}
+
+#basicfooter {
+    background: linear-gradient(to top, #daacac, transparent); 
+    width: 100%;
+    height: 300px;
+    padding-bottom: 100px;
+    margin-top: 150px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    max-width: 960px;
+    margin: 0 auto; 
+  }
+
+  #footerlogo {
+    margin: 0 50px;
+    width: 300px;
+  }
+
+  #footerlogo {
+    margin-top: 100px;
+    width: 250px;
+  }
+  .footer-info {
+    margin-top: 130px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+  }
+
+

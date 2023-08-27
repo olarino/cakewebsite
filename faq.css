@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,400;1,100&display=swap');
+#site-top-logo {
+    width: 150px;
+    
+}
+
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   background-color: #fff;
+}
+
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px; /* İstenilen üst boşluk */
+}
+
+
+
+
+
+
+
+
+.nav-buttons-default {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 12px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center; /* Metni yatayda ortala */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 60px; /* Metni dikeyde ortala (eşit yükseklik) */
+    transition: color 0.3s;
+    letter-spacing: 2px;
+}
+.nav-buttons-default i {
+    font-size: 8px; /* İstenilen boyut (örnekte 8px) */
+    vertical-align:1.4px;
+}
+
+.overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+  }
+  
+  .overlay p {
+    text-align: center;
+    color: #000;
+  }
+  .container {
+    position: relative;
+    display: inline-block;
+  }
+
+
+/* Dropdown içeriği için stil düzenlemeleri */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Beyaz arkaplan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde arka plan rengi değiştir */
+}
+
+/* Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown butonuna gelindiğinde dropdown içeriğini göster */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.portfolio-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.4); /* Arka plan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Portfolio içindeki Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.portfolio-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio içindeki Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.portfolio-dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde metin rengi değiştir */
+}
+
+/* Portfolio içindeki Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.portfolio-dropdown {
+    position: relative;
+}
+
+/* Portfolio içindeki Dropdown butonuna gelindiğinde Dropdown içeriğini göster */
+.portfolio-dropdown:hover .portfolio-dropdown-content {
+    display: block;
+}
+
+
+#nav-contact-order {
+  color: rgb(237,200,177);
+ }
+
+
+
+
+
+/* Contact içindeki Dropdown içeriği için stil düzenlemeleri */
+.contact-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 0;
+    color: rgb(237,200,177);
+    background-color: rgba(0, 0, 0, 0.4); /* Arka plan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Contact içindeki Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.contact-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact içindeki Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.contact-dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde metin rengi değiştir */
+}
+
+/* Contact içindeki Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.contact-dropdown {
+    position: relative;
+}
+
+/* Contact içindeki Dropdown butonuna gelindiğinde Dropdown içeriğini göster */
+.contact-dropdown:hover .contact-dropdown-content {
+    display: block;
+}
+
+
+::selection {
+    background-color: rgb(202, 155, 229);
+    color: white;
+}
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400&display=swap');
+* {
+  box-sizing: border-box;
+}
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.containerx {
+  margin: 0 auto;
+  padding: 4rem;
+  width: 48rem;
+  margin-top: 100px;
+}
+.accordion .accordion-item {
+  border-bottom: 1px solid #e5e5e5;
+}
+.accordion .accordion-item button[aria-expanded='true'] {
+  border-bottom: 1px solid #daacac;
+}
+.accordion button {
+  position: relative;
+  display: block;
+  text-align: left;
+  width: 100%;
+  padding: 1em 0;
+  color: #7288a2;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border: none;
+  background: none;
+  outline: none;
+}
+.accordion button:hover,
+.accordion button:focus {
+  cursor: pointer;
+  color: #daacac;
+}
+.accordion button:hover::after,
+.accordion button:focus::after {
+  cursor: pointer;
+  color: #000000;
+  border: 1px solid #daacac;
+}
+.accordion button .accordion-title {
+  padding: 1em 1.5em 1em 0;
+}
+.accordion button .icon {
+  display: inline-block;
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 22px;
+  height: 22px;
+  border: 1px solid;
+  border-radius: 22px;
+}
+.accordion button .icon::before {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 9px;
+  left: 5px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+}
+.accordion button .icon::after {
+  display: block;
+  position: absolute;
+  content: '';
+  top: 5px;
+  left: 9px;
+  width: 2px;
+  height: 10px;
+  background: currentColor;
+}
+.accordion button[aria-expanded='true'] {
+  color: #daacac;
+}
+.accordion button[aria-expanded='true'] .icon::after {
+  width: 0;
+}
+.accordion button[aria-expanded='true'] + .accordion-content {
+  opacity: 1;
+  max-height: 9em;
+  transition: all 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 200ms linear, max-height 200ms linear;
+  will-change: opacity, max-height;
+}
+.accordion .accordion-content p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin: 2em 0;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 500;
+  color: #000000 /* Set the text color to black with higher priority */
+}
+
+
+#basicfooter {
+  background: linear-gradient(to top, #daacac, transparent); 
+  width: 100%;
+  height: 400px;
+  padding-bottom: 100px;
+  margin-top: 150px;
+  display: flex;
+  align-items: center;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center; 
+  max-width: 960px;
+  margin: 0 auto; 
+}
+
+#footerlogo {
+  margin: 0 50px;
+  width: 300px;
+}
+
+#footerlogo {
+  margin-top: 150px;
+  width: 250px;
+}
+.footer-info {
+  margin-top: 150px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+#faqtitle {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}

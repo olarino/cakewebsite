@@ -1,0 +1,363 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,100&display=swap');
+#site-top-logo {
+    width: 150px;
+    
+}
+
+
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+
+.topnav {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+  margin-top: 20px; /* İstenilen üst boşluk */
+}
+
+
+
+
+
+
+
+
+.nav-buttons-default {
+    display: inline-block;
+    text-decoration: none;
+    color: #000;
+    padding: 8px 12px;
+    margin: 20px;
+    border-radius: 5px;
+    text-align: center; /* Metni yatayda ortala */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    line-height: 60px; /* Metni dikeyde ortala (eşit yükseklik) */
+    transition: color 0.3s;
+    letter-spacing: 2px;
+}
+.nav-buttons-default i {
+    font-size: 8px; /* İstenilen boyut (örnekte 8px) */
+    vertical-align:1.4px;
+}
+
+
+
+
+
+
+/* Dropdown içeriği için stil düzenlemeleri */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Beyaz arkaplan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde arka plan rengi değiştir */
+}
+
+/* Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.dropdown {
+    position: relative;
+}
+
+/* Dropdown butonuna gelindiğinde dropdown içeriğini göster */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+
+.portfolio-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 30px;
+    background-color: rgba(0, 0, 0, 0.4); /* Arka plan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Portfolio içindeki Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.portfolio-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Portfolio içindeki Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.portfolio-dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde metin rengi değiştir */
+}
+
+/* Portfolio içindeki Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.portfolio-dropdown {
+    position: relative;
+}
+
+/* Portfolio içindeki Dropdown butonuna gelindiğinde Dropdown içeriğini göster */
+.portfolio-dropdown:hover .portfolio-dropdown-content {
+    display: block;
+}
+
+
+
+
+
+
+/* Contact içindeki Dropdown içeriği için stil düzenlemeleri */
+.contact-dropdown-content {
+    display: none;
+    position: absolute;
+    top: 85%; /* Dropdown içeriği, butonun altında olacak */
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.4); /* Arka plan rengi */
+    width: 200px;
+    border-radius: 5px; /* Kenarları yuvarlat */
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Contact içindeki Dropdown içeriğindeki ürünler arasında boşluk bırakmak için stil düzenlemeleri */
+.contact-dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    color: #ffffff; /* Metin rengi */
+    text-decoration: none;
+    transition: color 0.3s; /* Arka plan rengi geçişi */
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* Contact içindeki Dropdown içeriğindeki ürünlerin üzerine gelindiğinde stil düzenlemeleri */
+.contact-dropdown-content a:hover {
+    color: rgb(237,200,177); /* Üzerine gelindiğinde metin rengi değiştir */
+}
+
+/* Contact içindeki Dropdown içeriğin bulunduğu div için position'ı relative yapalım */
+.contact-dropdown {
+    position: relative;
+}
+
+/* Contact içindeki Dropdown butonuna gelindiğinde Dropdown içeriğini göster */
+.contact-dropdown:hover .contact-dropdown-content {
+    display: block;
+}
+
+
+::selection {
+    background-color: rgb(202, 155, 229);
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+#nav-order-now-button:hover {
+    cursor:pointer;
+}
+#nav-portfolio-order:hover {
+    cursor:pointer;
+}
+#nav-contact-order:hover {
+    cursor:pointer;
+    color: rgb(237,200,177);
+}
+#nav-contact-order {
+ color: rgb(237,200,177);
+}
+#site-top-logo {
+    width: 200px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+.nav-buttons-default:hover {
+    color: rgb(237,200,177); /* Yumuşak geçişle değişecek renk */
+}
+
+
+#basicfooter {
+    background: linear-gradient(to top, #daacac, transparent); 
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 300px;
+
+}
+
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    max-width: 960px;
+    margin: 0 auto; 
+  }
+
+  #footerlogo {
+    margin: 0 50px;
+    width: 300px;
+  }
+
+  #footerlogo {
+    margin-top: 100px;
+    width: 250px;
+  }
+  .footer-info {
+    margin-top: 150px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  #harita1 {
+    margin-top: 100px;
+  }
+
+  #haritatext {
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 36px;
+  }
+
+
+
+
+
+
+
+  .contact-container {
+    width: 80%;
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: scale(0.9);
+    animation: fadeInScale 1s forwards;
+  }
+  
+  @keyframes fadeInScale {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  h1 {
+    text-align: center;
+    color: #007BFF;
+  }
+  
+  .contact-info {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeInTranslate 1s forwards;
+  }
+  
+  @keyframes fadeInTranslate {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .contact-item {
+    margin: 10px 0;
+    color: #333;
+    position: relative;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .info-label {
+    font-weight: bold;
+  }
+  
+.info-content {
+    display: inline-block;
+    transition: transform 0.2s, font-size 0.2s;
+    text-align: center; /* Eklenen özellik */
+}
+  
+  a {
+    color: #007BFF;
+    text-decoration: none;
+    
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    
+  }
+  
+  .hours-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+  }
+  
+  .hours-list li {
+    margin-bottom: 5px;
+    color: #555;
+  }
+  
+  /* Animasyonlu büyüme efekti */
+  .contact-item:hover .info-content {
+    transform: scale(1.1);
+    font-size: 18px;
+  }
+  
